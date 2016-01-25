@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Headoo Demo API</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		
+		<style type="text/css">
+			*, *:before, *:after {box-sizing:  border-box !important;}
+			
+			.row {
+			 -moz-column-width: 18em;
+			 -webkit-column-width: 18em;
+			 -moz-column-gap: 1em;
+			 -webkit-column-gap:1em; 
+			  
+			}
+			
+			.item {
+			 display: inline-block;
+			 padding:  .25rem;
+			 width:  100%; 
+			}
+			
+			.well {
+			 position:relative;
+			 display: block;
+			}
+		</style>
+	</head>
+
+	<body>
+	
+	
+	<div class="container">
+	  <h1>Headoo API Demo</h1> <button id="apiCallButton" class="btn btn-info">Add Image From Headoo API</button>
+	  <br/><br/>
+		<div class="row"></div>
+	</div>
+	
+	<script> 
+	var headooButton = document.getElementById("apiCallButton");
+	headooButton.addEventListener('click', addImageFromApi, false);
+	
+	function addImageFromApi() {
+		var token = '';
+		//First We get the JWT Token with our credentials
+		$.post( "http://headoo.com/api/v1/login_check", { _username: "demo_api", _password: "demo_api_head00!$" })
+		  .done(function( data ) {
+		    token = data . token;
+		    //Then we can do a call with our Secure Token.
+		    callApiGet(token);
+		  });
+		}
+		
+		function callApiGet(token){
+			$.ajax({
+	         url: "http://headoo.com/api/v1/shootings/latest.json?&establishment_id=1233&limit=10",
+	         type: "GET",
+	         // The API call must contain an Authorization Header, with Bearer + token
+	         beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + token);},
+	         success: function(result) { 
+				$.each(result.data, function( index, value ) {
+				  	console.log( value.thumbnail );
+				  	var divImg = '<div class="item">';
+		        	divImg +='<div class="well">';
+		        	divImg +='<img class="img-responsive" src="' + value.thumbnail + '" />';
+		        	divImg += '</div></div>';
+		    		$( ".row" ).append( divImg );
+				});
+	         }
+	      });
+		}
+		
+	</script>
+	
+	</body>
+</html>
