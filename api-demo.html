@@ -41,13 +41,13 @@
 	</div>
 	
 	<script> 
-	var headooButton = document.getElementById("apiCallButton");
+	var headooButton = document.getElementById('apiCallButton');
 	headooButton.addEventListener('click', addImageFromApi, false);
 	
 	function addImageFromApi() {
 		var token = '';
 		//First We get the JWT Token with our credentials
-		$.post( "http://headoo.com/api/v1/login_check", { _username: "demo_api", _password: "demo_api_head00!$" })
+		$.post( 'http://headoo.com/api/v1/login_check', { _username: 'demo_api', _password: 'demo_api_head00!$' })
 		  .done(function( data ) {
 		    token = data . token;
 		    //Then we can do a call with our Secure Token.
@@ -57,8 +57,8 @@
 		
 		function callApiGet(token){
 			$.ajax({
-	         url: "http://headoo.com/api/v1/shootings/latest.json?&establishment_id=1233&limit=10",
-	         type: "GET",
+	         url: 'http://headoo.com/api/v1/photos/get.json?&establishment_id=1233&limit=10&filters={"direction":"desc"}',
+	         type: 'GET',
 	         // The API call must contain an Authorization Header, with Bearer + token
 	         beforeSend: function(xhr){xhr.setRequestHeader('Authorization', 'Bearer ' + token);},
 	         success: function(result) { 
