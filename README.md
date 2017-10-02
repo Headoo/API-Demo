@@ -1,6 +1,6 @@
 # API-Demo
-A little example for an utilization of our API
 
--------------
+This demo is deprecated.
+Do not use. 
 
-If you want an access with an Establishment and a Login/Password, send us an email at support@headoo.com
+Kept for a short time for legacy reason only
