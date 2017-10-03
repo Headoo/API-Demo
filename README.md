@@ -89,10 +89,6 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
 
 ## Autres mode d’intégration
 
-Dans le cas, ou il est impossible de modifier le site où le widget va être intégré, il est possible de l'intégrer dans un élément existant de la page. Pour ce faire il suffit de remplacer le paramètre "container"par "placement: {selector: '.cross-sell h2', order: 'before'}". 
-"selector" doit pointer vers un élément existant dans la page et la valeur de "order" doit être 'before' ou 'after'. 
-
-
 Passer par l’API REST : 
 [exemple d’API](https://headoo.com/api/v1/photos/get.json?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
 
@@ -100,9 +96,13 @@ Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura f
 
 [Preview ici](http://htmlpreview.github.io/?https://github.com/Headoo/API-Demo/blob/master/api-demo.html)
 
-
+[Référence de l'API](https://admin.headoo.com/doc/api)
 
 ## Remarques
+
+Dans le cas, ou il est impossible de modifier le site où le widget va être intégré, il est possible de l'intégrer dans un élément existant de la page. Pour ce faire il suffit de remplacer le paramètre "container"par "placement: {selector: '.cross-sell h2', order: 'before'}". 
+"selector" doit pointer vers un élément existant dans la page et la valeur de "order" doit être 'before' ou 'after'. 
+
 
 Concernant les medias dans la section "meilleurs publications", si ce ne sont pas des publications à l'intérieur de la période d'absorption, elles ne seront pas absorbées.
 
