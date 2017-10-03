@@ -94,11 +94,11 @@ Dans le cas, ou il est impossible de modifier le site où le widget va être int
 
 
 Passer par l’API REST : 
-exemple d’API : `https://headoo.com/api/v1/photos/get.json?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15`
+(exemple d’API)[https://headoo.com/api/v1/photos/get.json?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15]
 
 Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura fourni
 
-Preview ici : `http://htmlpreview.github.io/?https://github.com/Headoo/API-Demo/blob/master/api-demo.html`
+(Preview ici)[http://htmlpreview.github.io/?https://github.com/Headoo/API-Demo/blob/master/api-demo.html]
 
 
 
