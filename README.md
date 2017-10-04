@@ -100,6 +100,8 @@ Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura f
 
 ## Remarques
 
+dab0b4kce2l36.cloudfront.net est le CDN de headoo.com
+
 Dans le cas, ou il est impossible de modifier le site où le widget va être intégré, il est possible de l'intégrer dans un élément existant de la page. Pour ce faire il suffit de remplacer le paramètre "container"par "placement: {selector: '.cross-sell h2', order: 'before'}". 
 "selector" doit pointer vers un élément existant dans la page et la valeur de "order" doit être 'before' ou 'after'. 
 
