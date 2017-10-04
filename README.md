@@ -19,10 +19,6 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 </script>
 ```
 
-Voici un exemple de ce mode:
-
-`https://cdn.rawgit.com/nicolasbonnici/4cd765dfd81bc5770e856452db5f7cd0/raw/c3352dd0eec4e20e852a3a08e00a3bce96d7e109/widget-vc-banner.html`
-
 Si des contenus sont enrichis d'au moins un tag et modérés positivement, le widget les affichera. Le cas échéant le widget disparaît de la page. Pour modifier ce comportement, en environnement de recette par exemple, vous pouvez ajouter ce paramètre "filters: {}", le widget affichera alors tous les derniers contenus aspirés directement.
 
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
