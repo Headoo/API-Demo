@@ -7,7 +7,7 @@ Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
 Ajouter un div avec un id "widget-container" dans la page là ou le widget doit apparaître ainsi que le code suivant:
 
 ```
-<script src="https://headoo.com/js/widget-visualcommerce.js"></script>
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce.js"></script>
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -28,7 +28,7 @@ Si des contenus sont enrichis d'au moins un tag et modérés positivement, le wi
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
 
 ```
-<script src="https://headoo.com/js/widget-visualcommerce.js"></script>
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce.js"></script>
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -51,7 +51,7 @@ Voici un exemple de ce mode:
 Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter un paramètre "tag_shortname: '123456789a'".
 
 ```
-<script src="https://headoo.com/js/widget-visualcommerce.js"></script>
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce.js"></script>
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -73,7 +73,7 @@ Précision : Si à la place de '123456789a' vous mettez 'sac 123456789a' , tous 
 Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le paramètre hide_tags.
 
 ```
-<script src="https://headoo.com/js/widget-visualcommerce.js"></script>
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce.js"></script>
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
