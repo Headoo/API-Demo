@@ -47,31 +47,32 @@ Voici un exemple de ce mode:
 Les options avancées sont les suivantes, avec les valeurs par défaut : 
 
 
-            settings: {
-                container: null,
-                placement: null, // Dynamically inject container on DOM exemple value: {selector: '.selector:last', order: 'before|after'}
-                visualcommerce_id: null,
-                uuid: null,
-                tag_shortname: null, // Specific tag shortname to filter UGC
-                widget_mode: 'widget', // ['widget'||'gallery']
-                locale: 'en',
-                width: '100%',
-                itemWidth: 200, // Only for 'gallery' mode
-                arrow_size: 'normal', // Only for 'widget' mode other value: 'small'
-                gutter: 20, // Space between items
-                height: 200, // Only for 'widget' mode
-                limit: 15, // Pagination limit
-                speed: 500, // Widget scroll easing speed
-                resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
-                sort: '{"created_at":"desc"}', // API sort options
-                filters: '{"moderated":"1","tagged":"1"}', // API filter
-                scheme: 'https', // Scheme for API call
-                domain: 'headoo.com', // Domain for API call
-                domain_assets: 'headoo.com', // Domain for assets loading
-                assets_cache: true, // Cache or not assets
-                hideTags: false, // Flag to hide the tags
-                debug: false // Call API in app_dev mode
-            },
+    settings: {
+        container: null,
+        placement: null, // Dynamically inject container on DOM exemple value: {selector: '.selector:last', order: 'before|after'}
+        visualcommerce_id: null,
+        uuid: null,
+        tag_shortname: null, // Specific tag shortname to filter UGC
+        widget_mode: 'widget', // ['widget'||'gallery']
+        locale: 'en',
+        width: '100%',
+        itemWidth: 200, // Only for 'gallery' mode
+        arrow_size: 'normal', // Only for 'widget' mode other value: 'small'
+        gutter: 20, // Space between items
+        height: 200, // Only for 'widget' mode
+        limit: 15, // Pagination limit
+        speed: 500, // Widget scroll easing speed
+        resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
+        sort: '{"created_at":"desc"}', // API sort options
+        filters: '{"moderated":"1","tagged":"1"}', // API filter
+        scheme: 'https', // Scheme for API call
+        domain: 'headoo.com', // Domain for API call
+        domain_assets: 'headoo.com', // Domain for assets loading
+        assets_cache: true, // Cache or not assets
+        hideTags: false, // Flag to hide the tags
+        debug: false // Call API in app_dev mode
+    }
+
 
 
 ## Filtrer les contenus affichés
