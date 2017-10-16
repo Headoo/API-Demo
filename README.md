@@ -14,12 +14,31 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
             container: '#widget-container',
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr'
-        }).init();
+        });
     });
 </script>
 ```
 
+Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration est possible, en ciblant un élément dans la page et en se positionnant au choix avant ou après comme dans l'éxemple suivant avec le paramètre "placement". Le paramètre "selector" est un selecteur jQuery et "order" accepte les valeurs 'before' et 'after'.
+
+```
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce.js"></script>
+<script>
+jQueryHeadoo(document).ready(function() {
+    jQueryHeadoo.fn.visualCommerce({
+        placement : {selector: '.selector:last', order: 'before|after'}
+	uuid: ‘VOTRE_IDENTIFIANT’,
+	locale: 'fr'
+    });
+});
+</script>
+```
+
 Si des contenus sont enrichis d'au moins un tag et modérés positivement, le widget les affichera. Le cas échéant le widget disparaît de la page. Pour modifier ce comportement, en environnement de recette par exemple, vous pouvez ajouter ce paramètre "filters: {}", le widget affichera alors tous les derniers contenus aspirés directement.
+
+Voici un exemple de ce mode:
+
+`http://headoo.com/static/html/testvc.html`
 
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
 
@@ -31,8 +50,8 @@ Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre 
             container: '#widget-container',
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr',
-      mode: 'gallery'
-        }).init();
+	    mode: 'gallery'
+        });
     });
 </script>
 ```
@@ -40,7 +59,7 @@ Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre 
 
 Voici un exemple de ce mode:
 
-`https://cdn.rawgit.com/nicolasbonnici/e72b35a953407b81190b2fa215449918/raw/fe48e69d188f04d2ac68bd35de19a6576f832019/vc-widget-gallery.html`
+`http://headoo.com/static/html/testvc-gallery.html`
 
 ## Options avancées
 
@@ -48,29 +67,29 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
 
 
     settings: {
-        container: null,
-        placement: null, // Dynamically inject container on DOM exemple value: {selector: '.selector:last', order: 'before|after'}
-        visualcommerce_id: null,
-        uuid: null,
-        tag_shortname: null, // Specific tag shortname to filter UGC
-        widget_mode: 'widget', // ['widget'||'gallery']
-        locale: 'en',
-        width: '100%',
-        itemWidth: 200, // Only for 'gallery' mode
-        arrow_size: 'normal', // Only for 'widget' mode other value: 'small'
-        gutter: 20, // Space between items
-        height: 200, // Only for 'widget' mode
-        limit: 15, // Pagination limit
-        speed: 500, // Widget scroll easing speed
-        resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
-        sort: '{"created_at":"desc"}', // API sort options
-        filters: '{"moderated":"1","tagged":"1"}', // API filter
-        scheme: 'https', // Scheme for API call
-        domain: 'headoo.com', // Domain for API call
-        domain_assets: 'headoo.com', // Domain for assets loading
-        assets_cache: true, // Cache or not assets
-        hideTags: false, // Flag to hide the tags
-        debug: false // Call API in app_dev mode
+                container: null,
+                placement: null, // Dynamically inject container on DOM exemple value: {selector: '.selector:last', order: 'before|after'}
+                visualcommerce_id: null,
+                uuid: null,
+                tag_shortname: null, // Specific tag shortname to filter UGC
+                widget_mode: 'widget', // ['widget'||'gallery']
+                locale: 'en',
+                width: '100%',
+                itemWidth: 200, // Only for 'gallery' mode
+                arrow_size: 'normal', // Only for 'widget' mode other value: 'small'
+                gutter: 20, // Space between items
+                height: 200, // Only for 'widget' mode
+                limit: 15, // Pagination limit
+                speed: 500, // Widget scroll easing speed
+                resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
+                sort: '{"created_at":"desc"}', // API sort options
+                filters: '{"moderated":"1","tagged":"1"}', // API filter
+                scheme: 'https', // Scheme for API call
+                domain: 'headoo.com', // Domain for API call
+                domain_assets: 'headoo.com', // Domain for assets loading
+                assets_cache: true, // Cache or not assets
+                hideTags: false, // Flag to hide the tags
+                debug: false // Call API in app_dev mode
     }
 
 
@@ -88,7 +107,7 @@ Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr',
 	      tag_shortname: '123456789a'
-        }).init();
+        });
     });
 </script>
 ```
@@ -110,7 +129,7 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr',
             hide_tags: true
-        }).init();
+        });
     });
 </script>
 ```
@@ -122,8 +141,6 @@ Passer par l’API REST :
 [exemple d’API](https://headoo.com/api/v1/photos/get.json?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
 
 Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura fourni
-
-[Preview ici](http://htmlpreview.github.io/?https://github.com/Headoo/API-Demo/blob/master/api-demo.html)
 
 [Référence de l'API](https://admin.headoo.com/doc/api)
 
