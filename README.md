@@ -142,7 +142,18 @@ Passer par l’API REST :
 
 Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura fourni
 
+Cette API ne requiert PAS d'authentification
+
 [Référence de l'API](https://admin.headoo.com/doc/api)
+
+## Showcase
+### Foir'fouille
+* Sur la Home, widget headoo avec personnalisation de la taille des images via configuration itemWidth : https://www.lafoirfouille.fr/. On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : https://headoo.com/api/v1/photos/get.json?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=15 avec des paramètres de tri, de limit et de filtre.
+
+* Sur la page gallerie dédiée : https://www.lafoirfouille.fr/galerie-photo-communaute.html avec un mode d'affichage gallerie et une limite du nombre d'objets retournés : 
+            widget_mode: 'gallery',
+            limit: 18,
+Ici aussi, l'API appelée par le widget est visible dans l'onglet network : https://headoo.com/api/v1/photos/get.json?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18
 
 ## Remarques
 
