@@ -178,6 +178,77 @@ Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `ht
 ### The Great European Carnival
 * [Page gallerie dédiée](http://www.tgec.asia/social/), appel API par le widget : `https://headoo.com/api/v1/photos/get.json?visualcommerce_id=9&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22}&limit=15`
 
+
+
+## Détail des champs de l'API
+
+### Request
+```
+https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902
+```
+### Response
+```
+{  
+   "page":1,
+   "results":1,
+   "lastpage":true,
+   "nb_pages":1,
+   "data":[  
+      {  
+         "id":1418830,
+         "thumbnail":"https:\/\/dzn64v9qd7vq9.cloudfront.net\/photo_square\/59f\/59fc2ef598cfc.jpg",
+         "media":"https:\/\/headoo-media.s3.amazonaws.com\/shooting\/59f\/59fc2ef598cfc.jpg",
+         "created_at":"2017-11-03T08:55:17+00:00",
+         "opted_at":"2017-11-03T08:55:16+00:00",
+         "optin":1,
+         "content":"\u041f\u0435\u0440\u0432\u044b\u0435 \u043f\u043e\u0437\u0434\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f ??\n.\n.\n.\n#bday #zebra #Etam #jagger_schnauzer #morning #lifeissobeautiful #happy #sweetnovember #november2017",
+         "username":"marinamatsiuk",
+         "moderation":0,
+         "moderation_elastica":1,
+         "page_url":"https:\/\/headoo.com\/photo\/1418830?access_token=445142edeee1b636ce35a26281d6d0f1",
+         "instagram_link":"https:\/\/www.instagram.com\/p\/Ba8n_XcAn3L\/",
+         "instagram_likes":80,
+         "instagram_comments":32,
+         "instagram_filter":"Normal",
+         "instagram_type":"image",
+         "instagram":"marina_horbunova",
+         "profil_picture":"https:\/\/scontent.cdninstagram.com\/t51.2885-19\/s150x150\/14269009_1680189662308745_2048434738_a.jpg",
+         "instagram_user_followed":246,
+         "instagram_user_followers":191,
+         "social_media":"https:\/\/scontent.cdninstagram.com\/t51.2885-15\/e35\/p320x320\/22860589_1957011234562641_3400318538727030784_n.jpg",
+         "instagram_content":"\u041f\u0435\u0440\u0432\u044b\u0435 \u043f\u043e\u0437\u0434\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \ud83d\ude0b\ud83d\udc15\n.\n.\n.\n#bday #zebra #Etam #jagger_schnauzer #morning #lifeissobeautiful #happy #sweetnovember #november2017",
+         "tags":[  
+            {  
+               "id":9889,
+               "establishment_id":2145,
+               "shortname":"648612902",
+               "logo":"https:\/\/headoo.com\/media\/cache\/resolve\/establishment_logo_hd\/tags\/9889\/logo-5990071aab817.jpg%3Fsw=500%26sh=591",
+               "default_locale":"fr",
+               "created_at":"2017-08-13T08:00:26+00:00",
+               "updated_at":"2017-08-13T08:00:26+00:00",
+               "visualcommerce_id":47,
+               "translations":{  
+                  "fr":{  
+                     "name":"Combinaison z\u00e8bre",
+                     "url":"http:\/\/www.etam.com\/nuit\/modeles\/combinaisons\/combinaison-zebre-648612902.html",
+                     "url_utm":"http:\/\/www.etam.com\/nuit\/modeles\/combinaisons\/combinaison-zebre-648612902.html?utm_source=headoo&utm_medium=ishop&utm_campaign=shoppable-instagram-",
+                     "logo":""
+                  }
+               }
+            }
+         ],
+         "has_demand":true,
+         "has_response":true,
+         "is_tagged":true,
+         "instagram_deleted":false
+      }
+   ]
+}
+```
+
+
+
+
 ## Remarques
 
 dab0b4kce2l36.cloudfront.net est le CDN de headoo.com
