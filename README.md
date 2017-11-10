@@ -248,8 +248,8 @@ https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&
 
 #### Info about response
 
-data.0.media is the media (image). It is a copy of the source, not necessarily square
-data.0.thumbnail is the media (image) squared. Use it when you want a square image
+* data.0.media is the media (image). It is a copy of the source, not necessarily square
+* data.0.thumbnail is the media (image) squared. Use it when you want a square image
 
 ## Remarques
 
