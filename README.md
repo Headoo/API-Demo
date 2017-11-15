@@ -234,7 +234,9 @@ https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&
                      "url_utm":"http:\/\/www.etam.com\/nuit\/modeles\/combinaisons\/combinaison-zebre-648612902.html?utm_source=headoo&utm_medium=ishop&utm_campaign=shoppable-instagram-",
                      "logo":""
                   }
-               }
+               },
+		"position":"{\"position\":{\"x\":0.36,\"y\":0.28},\"text\":\"\",\"buttonAttributes\":{},\"popupAttributes\":{}}"
+
             }
          ],
          "has_demand":true,
