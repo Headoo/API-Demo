@@ -82,8 +82,8 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
                 limit: 15, // Pagination limit
                 speed: 500, // Widget scroll easing speed
                 resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
-                sort: '{"created_at":"desc"}', // API sort options
-                filters: '{"moderated":"1","tagged":"1"}', // API filter
+                sort: '{"created_at":"desc"}', // API sort options (Attention aux quotes : il s'agit d'un string et pas un objet javascript)
+                filters: '{"moderated":"1","tagged":"1"}', // API filter ((Attention aux quotes : il s'agit d'un string et pas un objet javascript)
                 scheme: 'https', // Scheme for API call
                 domain: 'headoo.com', // Domain for API call
                 domain_assets: 'headoo.com', // Domain for assets loading
