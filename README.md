@@ -255,10 +255,10 @@ https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&
 * data.0.tags.0.position : il s'agit d'un string et pas un objet javascript.
 Voici les correspondances : 
 
-| Position |   0    |   1    |
-| -------- |: ----: | -----: |
-|     x    | gauche | droite |
-|     y    | haut   | bas    |
+| Position | 0      | 1       |
+|:--------:|:-------|:--------|
+| x        | gauche | droite  |
+| y        | haut   | bas     |
 
 ## Remarques
 
