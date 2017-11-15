@@ -260,6 +260,8 @@ Voici les correspondances :
 | x        | gauche | droite  |
 | y        | haut   | bas     |
 
+Exemple d'API contenant des positions : `https://api.headoo.com/api/v1/photos/get.json?establishment_id=1789&sorts=%7B%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22%7D&limit=20&page=1&_=1510759199172`
+
 ## Remarques
 
 dab0b4kce2l36.cloudfront.net est le CDN de headoo.com
