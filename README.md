@@ -169,10 +169,6 @@ Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `ht
 ### Monnier Frères
 * [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://headoo.com/api/v1/photos/get.json?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
 
-### The Great European Carnival
-* [Page gallerie dédiée](http://www.tgec.asia/social/), appel API par le widget : `https://headoo.com/api/v1/photos/get.json?visualcommerce_id=9&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22}&limit=15`
-
-
 
 ## Détail des champs de l'API
 
