@@ -166,12 +166,6 @@ Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `ht
     Ici aussi, l'API appelée par le widget est visible dans l'onglet network : `https://headoo.com/api/v1/photos/get.json?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18`
 
 
-### Etam
-
-* [Page produit](http://www.etam.com/nuit/modeles/combinaisons/combinaison-zebre-648612902.html#headoo-widget-vc-slogan) Dans ce cas, le widget a été implémentanté dans un tag [GTM](https://www.google.com/intl/fr/tagmanager/). L'appel API est visible dans la console de debug avec un filtre sur la référence produit (`tag_shortname=648612902`) et les produits modérés (`moderated:"1"`) : `https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902`
-
-* [Page produit](http://www.etam.com/maillots-de-bain/les-hauts-de-maillot/haut-de-maillot-de-bain-triangle-imprime-palmier-648603190.html#headoo-widget-vc-slogan) autre exemple avec plusieurs produits retournés
-
 ### Monnier Frères
 * [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://headoo.com/api/v1/photos/get.json?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
 
