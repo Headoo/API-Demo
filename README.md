@@ -8,6 +8,7 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already use jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
