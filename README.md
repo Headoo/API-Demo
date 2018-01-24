@@ -8,7 +8,7 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already use jQuery -->
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -24,6 +24,7 @@ Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration e
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
 <script>
 jQueryHeadoo(document).ready(function() {
     jQueryHeadoo.fn.visualCommerce({
@@ -45,6 +46,7 @@ Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre 
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -101,6 +103,7 @@ Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -123,6 +126,7 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
