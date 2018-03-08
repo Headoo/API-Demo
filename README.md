@@ -153,7 +153,6 @@ Cette API ne requiert PAS d'authentification
 
 Utiliser systématiquement https://api.headoo.com au lieu de https://headoo.com (https://headoo.com sera déprécié courant 2018 pour les appels API)
 
-
 ## Showcase
 ### ishop.galery
 Notre produit ishop.gallery utilise notre API
@@ -173,6 +172,16 @@ Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `ht
 
 ### Monnier Frères
 * [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://headoo.com/api/v1/photos/get.json?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
+
+
+### Boucheron
+
+Utilisation de notre API sur https://vendorama.boucheron.com/
+
+### Sisley
+
+Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
+
 
 
 ## Détail des champs de l'API
