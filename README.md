@@ -149,7 +149,7 @@ Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura f
 
 Cette API ne requiert PAS d'authentification
 
-[Référence de l'API](https://admin.headoo.com/doc/api)
+[Référence de l'API](https://admin.headoo.com/admin/doc/api)
 
 Utiliser systématiquement https://api.headoo.com au lieu de https://headoo.com (https://headoo.com sera déprécié courant 2018 pour les appels API)
 
