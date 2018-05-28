@@ -38,10 +38,6 @@ jQueryHeadoo(document).ready(function() {
 
 Si des contenus sont enrichis d'au moins un tag et modérés positivement, le widget les affichera. Le cas échéant le widget disparaît de la page. Pour modifier ce comportement, en environnement de recette par exemple, vous pouvez ajouter ce paramètre "filters: {}", le widget affichera alors tous les derniers contenus aspirés directement.
 
-Voici un exemple de ce mode:
-
-`http://headoo.com/static/html/testvc.html`
-
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
 
 ```
