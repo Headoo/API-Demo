@@ -153,17 +153,17 @@ Utiliser systématiquement https://lihzzmafb2.execute-api.eu-west-3.amazonaws.co
 ### ishop.galery
 Notre produit ishop.gallery utilise notre API
 
-Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205`
+Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205
 
 ### Foir'fouille
-* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=15` avec des paramètres de tri, de limit et de filtre.
+* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=15 avec des paramètres de tri, de limit et de filtre.
 
 * [Page gallerie dédiée](https://www.lafoirfouille.fr/galerie-photo-communaute.html) avec un mode d'affichage gallerie et une limite du nombre d'objets retournés
 
         widget_mode: 'gallery',
         limit: 18,
 
-    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18`
+    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18
 
 
 ### Monnier Frères
