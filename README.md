@@ -173,10 +173,6 @@ Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : htt
 
 Utilisation de notre widget sur https://www.hotelsaintpaulparis.com/
 
-### Boucheron
-
-Utilisation de notre API sur https://vendorama.boucheron.com/
-
 ### Sisley
 
 Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
