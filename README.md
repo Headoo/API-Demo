@@ -156,7 +156,7 @@ Notre produit ishop.gallery utilise notre API
 Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205
 
 ### Foir'fouille
-* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API avec des paramètres de tri, de limit et de filtre. [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts=%7B%22moderated_at%22%3A%22desc%22%7D&filters=%22%7B%5C%22moderated%5C%22%3A%5C%224%5C%22%7D%22")
+* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API avec des paramètres de tri, de limit et de filtre. [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts=%7B%22moderated_at%22%3A%22desc%22%7D&filters=%22%7B%5C%22moderated%5C%22%3A%5C%224%5C%22%7D%22)
 
 * [Page gallerie dédiée](https://www.lafoirfouille.fr/galerie-photo-communaute.html) avec un mode d'affichage gallerie et une limite du nombre d'objets retournés
 
