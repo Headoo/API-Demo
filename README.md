@@ -143,7 +143,7 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
 ## Autres mode d’intégration
 
 Passer par l’API REST : 
-[exemple d’API](https://api.headoo.com/api/v1/photos/get.json?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
+[exemple d’API](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
 
 Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura fourni
 
@@ -151,27 +151,27 @@ Cette API ne requiert PAS d'authentification
 
 [Référence de l'API](https://admin.headoo.com/admin/doc/api)
 
-Utiliser systématiquement https://api.headoo.com au lieu de https://headoo.com (https://headoo.com sera déprécié courant 2018 pour les appels API)
+Utiliser systématiquement https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1 au lieu de https://headoo.com ou https://api.headoo.com (https://headoo.com et https://api.headoo.com seront dépréciés courant 2018 pour les appels API)
 
 ## Showcase
 ### ishop.galery
 Notre produit ishop.gallery utilise notre API
 
-Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `https://ishop.gallery/api/v1/photos/get.json?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205`
+Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205`
 
 ### Foir'fouille
-* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : `https://headoo.com/api/v1/photos/get.json?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=15` avec des paramètres de tri, de limit et de filtre.
+* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=15` avec des paramètres de tri, de limit et de filtre.
 
 * [Page gallerie dédiée](https://www.lafoirfouille.fr/galerie-photo-communaute.html) avec un mode d'affichage gallerie et une limite du nombre d'objets retournés
 
         widget_mode: 'gallery',
         limit: 18,
 
-    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : `https://headoo.com/api/v1/photos/get.json?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18`
+    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18`
 
 
 ### Monnier Frères
-* [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://headoo.com/api/v1/photos/get.json?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
+* [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
 
 ### Hotel Saint Paul
 
@@ -191,7 +191,7 @@ Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 
 ### Request
 ```
-https://headoo.com/api/v1/photos/get.json?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902
+https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902
 ```
 ### Response
 ```
@@ -267,7 +267,7 @@ Voici les correspondances :
 | x        | gauche | droite  |
 | y        | haut   | bas     |
 
-Exemple d'API contenant des positions : `https://api.headoo.com/api/v1/photos/get.json?establishment_id=1789&sorts=%7B%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22%7D&limit=20&page=1&_=1510759199172`
+Exemple d'API contenant des positions : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?establishment_id=1789&sorts=%7B%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22%7D&limit=20&page=1&_=1510759199172`
 
 ## Remarques
 
