@@ -182,9 +182,9 @@ Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 ## Détail des champs de l'API
 
 ### Request
-```
+
 [https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902)
-```
+
 ### Response
 ```
 {  
