@@ -156,18 +156,18 @@ Notre produit ishop.gallery utilise notre API
 Par exemple, sur https://ishop.gallery/soniarykiel/, voici l'API utilisée : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e70359e0-6ef9-4c1a-81b5-a6bbbcea&sorts={%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22}&limit=20&page=1&_=1510157242205
 
 ### Foir'fouille
-* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API, en l'occurence : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts=%7B"moderated_at"%3A"desc"%7D&filters="%7B%5C"moderated%5C"%3A%5C"4%5C"%7D" avec des paramètres de tri, de limit et de filtre.
+* [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API avec des paramètres de tri, de limit et de filtre. [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts=%7B%22moderated_at%22%3A%22desc%22%7D&filters=%22%7B%5C%22moderated%5C%22%3A%5C%224%5C%22%7D%22")
 
 * [Page gallerie dédiée](https://www.lafoirfouille.fr/galerie-photo-communaute.html) avec un mode d'affichage gallerie et une limite du nombre d'objets retournés
 
         widget_mode: 'gallery',
         limit: 18,
 
-    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts={%22created_at%22:%22desc%22}&filters=[object%20Object]&limit=18
+    Ici aussi, l'API appelée par le widget est visible dans l'onglet network : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts=%7B"moderated_at"%3A"desc"%7D&filters="%7B%5C"moderated%5C"%3A%5C"4%5C"%7D")
 
 
 ### Monnier Frères
-* [Page produit](http://www.monnierfreres.fr/hui-sac-seau-m-86926a-lan005039-fr.html#fparent) Dans ce cas, le widget est appelé dans un iframe (source : `http://www.monnierfreres.fr/headoo.php?sku=LAN005039`). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=LAN005039`
+* [Page produit](https://www.monnierfreres.com/fr-fr/sac-jeremie-config-dre006001-fr.html?sel=2600). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos??uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts=%7B"moderated_at"%3A"desc"%7D&filters=%7B"moderation"%3A1%2C"tagged"%3A1%7D&tag_shortname=DRE006001)
 
 ### Hotel Saint Paul
 
@@ -187,7 +187,7 @@ Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 
 ### Request
 ```
-https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902
+[https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902)
 ```
 ### Response
 ```
