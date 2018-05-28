@@ -183,7 +183,7 @@ Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 
 ### Request
 
-[https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15&tag_shortname=648612902)
+[https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c)
 
 ### Response
 ```
@@ -259,7 +259,7 @@ Voici les correspondances :
 | x        | gauche | droite  |
 | y        | haut   | bas     |
 
-Exemple d'API contenant des positions : `https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?establishment_id=1789&sorts=%7B%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22%7D&limit=20&page=1&_=1510759199172`
+Exemple d'[API contenant des positions](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=e5f4c706-f6f4-11e7-85c2-064e99048193&sorts=%7B%22sort%22:%22asc%22,%22instagram_created_at%22:%22desc%22%7D&limit=20&page=1&_=1510759199172)
 
 ## Remarques
 
