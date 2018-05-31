@@ -7,8 +7,8 @@ Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
 Ajouter un div avec un id "widget-container" dans la page là ou le widget doit apparaître ainsi que le code suivant:
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -23,8 +23,8 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration est possible, en ciblant un élément dans la page et en se positionnant au choix avant ou après comme dans l'éxemple suivant avec le paramètre "placement". Le paramètre "selector" est un selecteur jQuery et "order" accepte les valeurs 'before' et 'after'.
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
 <script>
 jQueryHeadoo(document).ready(function() {
     jQueryHeadoo.fn.visualCommerce({
@@ -41,8 +41,8 @@ Si des contenus sont enrichis d'au moins un tag et modérés positivement, le wi
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -98,8 +98,8 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
 Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter un paramètre "tag_shortname: '123456789a'".
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -121,8 +121,8 @@ Précision : Si à la place de '123456789a' vous mettez 'sac 123456789a' , tous 
 Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le paramètre hide_tags.
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.2.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.2.js instead of widget-visualcommerce-0.0.2.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
