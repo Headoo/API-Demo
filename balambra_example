@@ -1,0 +1,13 @@
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<script>
+  jQueryHeadoo.fn.visualCommerce({
+  container: "#widget-container",
+  uuid: "cf22536f-c885-4bfc-beb5-42a16619675a",
+  filters: '{"moderated":"1","tagged":"1", "tags":"tag_to_filter"}'
+  arrow_size: "normal",
+  height: "50",
+  speed: "500",
+  domain_assets: "headoo.com"
+  });
+    jQuery('.content_slider.selectionDescription').after('#widget-container')},200);
+</script>
