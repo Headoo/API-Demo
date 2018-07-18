@@ -21,6 +21,9 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 </script>
 ```
 
+[DEMO](https://htmlpreview.github.io/?https://github.com/Headoo/developer/blob/master/basic_example.html)
+
+
 Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration est possible, en ciblant un élément dans la page et en se positionnant au choix avant ou après comme dans l'éxemple suivant avec le paramètre "placement". Le paramètre "selector" est un selecteur jQuery et "order" accepte les valeurs 'before' et 'after'.
 
 ```
