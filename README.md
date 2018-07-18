@@ -21,8 +21,7 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 </script>
 ```
 
-[DEMO](https://htmlpreview.github.io/?https://github.com/Headoo/developer/blob/master/basic_example.html)
-
+[DEMO basic example](https://htmlpreview.github.io/?https://github.com/Headoo/developer/blob/master/basic_example.html)
 
 Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration est possible, en ciblant un élément dans la page et en se positionnant au choix avant ou après comme dans l'éxemple suivant avec le paramètre "placement". Le paramètre "selector" est un selecteur jQuery et "order" accepte les valeurs 'before' et 'after'.
 
@@ -114,6 +113,7 @@ Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un
     });
 </script>
 ```
+[DEMO tag filter example](https://htmlpreview.github.io/?https://github.com/Headoo/developer/blob/master/tag_filter_example.html)
 
 
 Précision : Si à la place de 'tag_to_filter' vous mettez 'sac tag_to_filter' , tous les produits dont un tag id contient Sac ou 'tag_to_filter' vont apparaître. C'est pourquoi nous déconseillons les tag id contenant des espaces. En revanche, nous vous invitons à mettre plusieurs tags par produit, reprenant notamment l’id produit et ses catégories.
