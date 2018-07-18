@@ -13,7 +13,7 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
             container: '#widget-container',
-            uuid: ‘VOTRE_IDENTIFIANT’,
+            uuid: 'VOTRE_IDENTIFIANT',
             locale: 'fr'
         });
     });
