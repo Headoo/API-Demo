@@ -1,6 +1,7 @@
 # Documentation widget visual commerce.
 
-Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
+* Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
+* Si vous avez besoin d'un uuid de test, utilisez "dfa4d61e-baf6-43db-a3af-0756eb45"
 
 ## Intégration
 
