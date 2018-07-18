@@ -7,8 +7,8 @@ Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
 Ajouter un div avec un id "widget-container" dans la page là ou le widget doit apparaître ainsi que le code suivant:
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.4.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -23,8 +23,8 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration est possible, en ciblant un élément dans la page et en se positionnant au choix avant ou après comme dans l'éxemple suivant avec le paramètre "placement". Le paramètre "selector" est un selecteur jQuery et "order" accepte les valeurs 'before' et 'after'.
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
 jQueryHeadoo(document).ready(function() {
     jQueryHeadoo.fn.visualCommerce({
@@ -41,8 +41,8 @@ Si des contenus sont enrichis d'au moins un tag et modérés positivement, le wi
 Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre mode: "gallery". Voici un exemple:
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.4.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -70,7 +70,6 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
                 placement: null, // Dynamically inject container on DOM exemple value: {selector: '.selector:last', order: 'before|after'}
                 visualcommerce_id: null,
                 uuid: null,
-                tag_shortname: null, // Specific tag shortname to filter UGC
                 widget_mode: 'widget', // ['widget'||'gallery']
                 locale: 'en',
                 width: '100%',
@@ -82,7 +81,7 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
                 speed: 500, // Widget scroll easing speed
                 resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
                 sort: '{"created_at":"desc"}', // API sort options (Attention aux quotes : il s'agit d'un string et pas un objet javascript)
-                filters: '{"moderated":"1","tagged":"1"}', // API filter ((Attention aux quotes : il s'agit d'un string et pas un objet javascript)
+                filters: '{"moderated":"1","tagged":"1", "tags":"tag_to_filter"}', // API filter ((Attention aux quotes : il s'agit d'un string et pas un objet javascript)
                 scheme: 'https', // Scheme for API call
                 domain: 'headoo.com', // Domain for API call
                 domain_assets: 'headoo.com', // Domain for assets loading
@@ -95,25 +94,25 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
 
 ## Filtrer les contenus affichés
 
-Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter un paramètre "tag_shortname: '123456789a'".
+Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter la valeur à filtrer (exemple "tag_to_filter") pour la clé "tags" de la string filters 
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.4.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
             container: '#widget-container',
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr',
-	      tag_shortname: '123456789a'
-        });
+	    filters: '{"moderated":"1","tagged":"1", "tags":"tag_to_filter"}'
+});
     });
 </script>
 ```
 
 
-Précision : Si à la place de '123456789a' vous mettez 'sac 123456789a' , tous les produits dont un tag id contient Sac '123456789a' vont apparaître. C'est pourquoi nous déconseillons les tag id contenant des espaces. En revanche, nous vous invitons à mettre plusieurs tags par produit, reprenant notamment l’id produit et ses catégories.
+Précision : Si à la place de 'tag_to_filter' vous mettez 'sac tag_to_filter' , tous les produits dont un tag id contient Sac ou 'tag_to_filter' vont apparaître. C'est pourquoi nous déconseillons les tag id contenant des espaces. En revanche, nous vous invitons à mettre plusieurs tags par produit, reprenant notamment l’id produit et ses catégories.
 
 
 ## Masquer les tags dans la popin
@@ -121,8 +120,8 @@ Précision : Si à la place de '123456789a' vous mettez 'sac 123456789a' , tous 
 Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le paramètre hide_tags.
 
 ```
-<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.3.js"></script>
-<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.3.js if you already have jQuery -->
+<script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
+<!-- use widget-visualcommerce-raw-0.0.3.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
@@ -177,6 +176,12 @@ Utilisation de notre widget sur https://www.hotelsaintpaulparis.com/
 
 Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 
+### Le Coq Sportif
+
+Utilisation de notre API sur un module galerie :  https://www.lecoqsportif.com/fr-fr/e-boutique/collection-tricolore
+Utilisation de notre API sur un module produit : 
+* https://www.lecoqsportif.com/fr-fr/e-boutique/sport-HOMMEEU18SSTRI_SP_CREW_S002-sweat-tricolore.html?codcoul=MULMUL
+* https://www.lecoqsportif.com/fr-fr/e-boutique/sport-HOMMEEU18SSTRI_SP_TEE_SS002-t-shirt-tricolore.html?codcoul=MULMUL
 
 
 ## Détail des champs de l'API
