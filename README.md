@@ -10,7 +10,7 @@ Ajouter un div avec un id "widget-container" dans la page là ou le widget doit 
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
 <!-- use widget-visualcommerce-raw-0.0.4.js instead of widget-visualcommerce-0.0.4.js if you already have jQuery -->
 <script>
-    jQueryHeadoo(document).ready(function() {
+    jQueryHeadoo(document).ready(function() {f
         jQueryHeadoo.fn.visualCommerce({
             container: '#widget-container',
             uuid: 'VOTRE_IDENTIFIANT',
@@ -29,7 +29,7 @@ Lorsque vous ne pouvez pas modifier le template, un autres mode d'intégration e
 jQueryHeadoo(document).ready(function() {
     jQueryHeadoo.fn.visualCommerce({
         placement : {selector: '.selector:last', order: 'before|after'}
-	uuid: ‘VOTRE_IDENTIFIANT’,
+	uuid: 'VOTRE_IDENTIFIANT',
 	locale: 'fr'
     });
 });
@@ -47,7 +47,7 @@ Pour afficher le widget en mode galerie, il vous suffit d'ajouter le paramètre 
     jQueryHeadoo(document).ready(function() {
         jQueryHeadoo.fn.visualCommerce({
             container: '#widget-container',
-            uuid: ‘VOTRE_IDENTIFIANT’,
+            uuid: 'VOTRE_IDENTIFIANT',
             locale: 'fr',
 	    mode: 'gallery'
         });
