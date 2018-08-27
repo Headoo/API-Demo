@@ -183,10 +183,7 @@ Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 ### Le Coq Sportif
 
 Utilisation de notre API sur un module galerie :  https://www.lecoqsportif.com/fr-fr/e-boutique/collection-tricolore
-Utilisation de notre API sur un module produit : 
-* https://www.lecoqsportif.com/fr-fr/e-boutique/sport-HOMMEEU18SSTRI_SP_CREW_S002-sweat-tricolore.html?codcoul=MULMUL
-* https://www.lecoqsportif.com/fr-fr/e-boutique/sport-HOMMEEU18SSTRI_SP_TEE_SS002-t-shirt-tricolore.html?codcoul=MULMUL
-
+Utilisation de notre API sur le site lecoqsportif.com : https://www.google.fr/search?q=dzn64v9qd7vq9+site%3Alecoqsportif.com
 
 ## Détail des champs de l'API
 
