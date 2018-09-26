@@ -83,8 +83,8 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
                 limit: 15, // Pagination limit
                 speed: 500, // Widget scroll easing speed
                 resize_breakpoint: 546, // The container width until the items are resized to fill the widget space (only for widget mode)
-                sort: '{"created_at":"desc"}', // API sort options (Attention aux quotes : il s'agit d'un string et pas un objet javascript)
-                filters: '{"moderated":"1","tagged":"1", "tags":"tag_to_filter"}', // API filter ((Attention aux quotes : il s'agit d'un string et pas un objet javascript)
+                sort: {"created_at":"desc"}, // API sort options (Attention aux quotes : il s'agit d'un string et pas un objet javascript)
+                filters: {"moderated":"1","tagged":"1", "tags":"tag_to_filter"}, // API filter ((Attention aux quotes : il s'agit d'un string et pas un objet javascript)
                 scheme: 'https', // Scheme for API call
                 domain: 'headoo.com', // Domain for API call
                 domain_assets: 'headoo.com', // Domain for assets loading
@@ -97,7 +97,7 @@ Les options avancées sont les suivantes, avec les valeurs par défaut :
 
 ## Filtrer les contenus affichés
 
-Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter la valeur à filtrer (exemple "tag_to_filter") pour la clé "tags" de la string filters 
+Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un tag existant, il vous suffit d'ajouter la valeur à filtrer (exemple "tag_to_filter") pour la clé "tags" de l'objet filters 
 
 ```
 <script src="https://dab0b4kce2l36.cloudfront.net/js/widget-visualcommerce-0.0.4.js"></script>
@@ -108,7 +108,7 @@ Si vous souhaitez filtrer les contenus affichés dans le widget en fonction d'un
             container: '#widget-container',
             uuid: ‘VOTRE_IDENTIFIANT’,
             locale: 'fr',
-	    filters: '{"moderated":"1","tagged":"1", "tags":"tag_to_filter"}'
+	    filters: {"moderated":"1","tagged":"1", "tags":"tag_to_filter"}
 });
     });
 </script>
