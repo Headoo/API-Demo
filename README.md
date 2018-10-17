@@ -170,7 +170,7 @@ Par exemple, sur https://ishop.gallery/rouje/, voici l'API utilisée : https://l
 
 
 ### Monnier Frères
-* [Page produit](https://www.monnierfreres.com/fr-fr/sac-jeremie-config-dre006001-fr.html?sel=2600). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts=%7B"moderated_at"%3A"desc"%7D&filters=%7B"moderation"%3A1%2C"tagged"%3A1%7D&tag_shortname=DRE006001)
+* [Page produit](https://www.monnierfreres.com/fr-fr/laces-sneakers-9b7b69.html). L'appel API est visible dans la console de debug avec un filtre sur la référence produit : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts=%7B"moderated_at"%3A"desc"%7D&filters=%7B"moderation"%3A1%2C"tagged"%3A1%7D&tag_shortname=DRE006001)
 
 ### Hotel Saint Paul
 
