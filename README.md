@@ -139,9 +139,8 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
 ```
 
 
-## Autres mode d’intégration
+# API REST
 
-Passer par l’API REST : 
 [exemple d’API](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
 
 Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura fourni
@@ -152,13 +151,13 @@ Cette API ne requiert PAS d'authentification
 
 Utiliser systématiquement https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1 au lieu de https://headoo.com ou https://api.headoo.com (https://headoo.com et https://api.headoo.com seront dépréciés courant 2018 pour les appels API)
 
-## Showcase
-### ishop.galery
+# Showcase
+## ishop.galery
 Notre produit ishop.gallery utilise notre API
 
 Par exemple, sur https://ishop.gallery/rouje/, voici l'API utilisée : https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=f4754723-e5b1-4964-8bd7-f79327f3e6a5&sorts=%7B%22sort%22%3A%22asc%22%2C%22instagram_created_at%22%3A%22desc%22%7D&filters=%7B%22moderation%22%3A1%7D&limit=20&page=1&_=1532093966786
 
-### Foir'fouille
+## Foir'fouille
 * [Home](https://www.lafoirfouille.fr/) widget headoo avec personnalisation de la taille des images via configuration itemWidth : . On peut voir dans les sources (onglet network dans Chrome) que le widget utilise l'API avec des paramètres de tri, de limit et de filtre. [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=15&sorts=%7B%22moderated_at%22%3A%22desc%22%7D&filters=%22%7B%5C%22moderated%5C%22%3A%5C%224%5C%22%7D%22)
 
 * [Page gallerie dédiée](https://www.lafoirfouille.fr/galerie-photo-communaute.html) avec un mode d'affichage gallerie et une limite du nombre d'objets retournés
@@ -169,31 +168,31 @@ Par exemple, sur https://ishop.gallery/rouje/, voici l'API utilisée : https://l
     Ici aussi, l'API appelée par le widget est visible dans l'onglet network : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=1dcd47d8-695c-4134-b5ec-3108ed15066f&limit=18&sorts=%7B"moderated_at"%3A"desc"%7D&filters="%7B%5C"moderated%5C"%3A%5C"4%5C"%7D")
 
 
-### Monnier Frères
+## Monnier Frères
 * [Page produit](https://www.monnierfreres.com/fr-fr/laces-sneakers-9b7b69.html). La page est un iframe (view-source:https://www.monnierfreres.com/headoo.php?sku=CONFIG_MCCS09007370)
 * L'appel API est visible dans la console de debug avec un filtre sur la référence produit : [Cliquer ici](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=db559230-db1b-4ec6-bd7e-7eca8f094608&limit=15&sorts=%7B"moderated_at"%3A"desc"%7D&filters=%7B"moderation"%3A1%2C"tagged"%3A1%7D&tag_shortname=DRE006001)
 * Toutes les pages produit : https://www.google.fr/search?q=dzn64v9qd7vq9+site:monnierfreres.com&tbm=isch
 
-### Hotel Saint Paul
+## Hotel Saint Paul
 
 Utilisation de notre widget sur https://www.hotelsaintpaulparis.com/
 
-### Sisley
+## Sisley
 
 Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
 
-### Le Coq Sportif
+## Le Coq Sportif
 
 Utilisation de notre API sur un module galerie :  https://www.lecoqsportif.com/fr-fr/e-boutique/collection-tricolore
 Utilisation de notre API sur le site lecoqsportif.com : https://www.google.fr/search?q=dzn64v9qd7vq9+site%3Alecoqsportif.com
 
-## Détail des champs de l'API
+# Détail des champs de l'API
 
-### Request
+## Request
 
 [https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=3e87b615-02a1-4915-a41f-0aa7510c)
 
-### Response
+## Response
 ```
 {  
    "page":1,
@@ -255,7 +254,7 @@ Utilisation de notre API sur le site lecoqsportif.com : https://www.google.fr/se
 }
 ```
 
-#### Info about response
+### Info about response
 
 * data.0.media is the media (image). It is a copy of the source, not necessarily square
 * data.0.thumbnail is the media (image) squared. Use it when you want a square image
