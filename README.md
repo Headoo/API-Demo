@@ -1,7 +1,7 @@
-#Sommaire
+# Sommaire
 
-## [Documentation widget visual commerce](#widget)
-## [API REST](#API)
+* [Documentation widget visual commerce](#widget)
+* [API REST](#API)
 
 # <a name="widget"></a>Documentation widget visual commerce.
 
