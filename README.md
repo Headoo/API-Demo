@@ -1,4 +1,9 @@
-# Documentation widget visual commerce.
+#Sommaire
+
+## [Documentation widget visual commerce](#widget)
+## [API REST](#API)
+
+# <a name="widget"></a>Documentation widget visual commerce.
 
 * Si vous n'avez pas d'uuid, merci de demander à support@headoo.com
 * Si vous avez besoin d'un uuid de test, utilisez "dfa4d61e-baf6-43db-a3af-0756eb45"
@@ -139,7 +144,7 @@ Pour masquer les tags dans la popin, partie droite, il suffit d’ajouter le par
 ```
 
 
-# API REST
+# <a name="API">API REST
 
 [exemple d’API](https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1/photos?uuid=7332ba4b-6cac-480d-9466-f2acfa91&limit=15&sorts={%22created_at%22:%22desc%22}&filters={%22moderated%22:%221%22,%22tagged%22:%221%22}&limit=15)
 
