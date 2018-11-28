@@ -148,7 +148,7 @@ Là aussi il faudra remplacer la valeur de uuid avec la valeur que l’on aura f
 
 Cette API ne requiert PAS d'authentification
 
-[Référence de l'API](https://admin.headoo.com/admin/doc/api)
+[Référence de l'API](https://documenter.getpostman.com/view/1212104/Rzfatscv")
 
 Utiliser systématiquement https://lihzzmafb2.execute-api.eu-west-3.amazonaws.com/prod_1 au lieu de https://headoo.com ou https://api.headoo.com (https://headoo.com et https://api.headoo.com seront dépréciés courant 2018 pour les appels API)
 
