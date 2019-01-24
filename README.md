@@ -182,10 +182,6 @@ Par exemple, sur https://ishop.gallery/rouje/, voici l'API utilisée : https://l
 
 Utilisation de notre widget sur https://www.hotelsaintpaulparis.com/
 
-## Sisley
-
-Utilisation de notre API sur http://www.sisley-paris.com/fr-FR/
-
 ## Le Coq Sportif
 
 Utilisation de notre API sur un module galerie :  https://www.lecoqsportif.com/fr-fr/e-boutique/collection-tricolore
